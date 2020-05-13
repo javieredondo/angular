@@ -1,0 +1,10 @@
+.image{
+    height: 100%;
+}
+
+.image iframe{
+    /* display: block;       iframes are inline by default */
+    border: none;
+    width: 100%;
+    height: 600px;
+}

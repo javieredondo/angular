@@ -1,0 +1,36 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5">
+      <h3>FormGroup</h3>
+      <div [formGroup]="myForm">
+        <div *ngFor="let name of objectKeys(formConfig)">
+                {{formConfig[name].name}}: 
+            <div *ngIf="formConfig[name].type === 'INPUT_TEXT'">
+                <input type="text" [formControlName]="name">
+            </div>
+            <div *ngIf="formConfig[name].type === 'INPUT_NUMBER'">
+                <input type="number" [formControlName]="name">
+            </div>
+            <div *ngIf="formConfig[name].type === 'TEXTAREA'">
+                <textarea [formControlName]="name">Insert here text</textarea>
+            </div>
+        </div>
+        <button (click)="getForm()">Get Form</button>
+    </div>
+      <!-- <form [formGroup]="myForm">
+          <app-editor-type [address]="myForm" [formConfig]="formConfig"></app-editor-type>
+          <button (click)="getForm()">Get Form</button>
+      </form> -->
+      <!-- <p>{{formConfig}}</p>
+      <input (input)="formConfig = $event.target.value"> -->
+    </div>
+  
+    <div class="col-lg-7">
+      <h3>Image</h3>
+      <div class="image">
+        <iframe #iframe id="iframeLoad"></iframe>
+      </div>
+    </div>
+  </div>
+<div>

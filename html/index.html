@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Restaurante Hierbabuena</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Header Menu -->
+        <header data-editable="TITLE">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Restaurante <b>Hierba</b>buena</h1>
+                </div>
+        </header>
+        <!-- Img -->
+        <div>
+            <img class="imagen" src="./img/mesa1.jpg" alt="">
+        </div>
+        <!-- Content -->
+        <div class="container content" data-editable="CONTENT">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>ALTA COCINA TOLEDANA</h1>
+                    <p>En el Restaurante Hierbabuena de Toledo podrá degustar autenticas delicias culinarias que sobrecogerán sus cinco sentidos. 
+                        Nuestros Chefs conseguirán que usted disfrute como nunca antes, ofreciéndole una increíble experiencia gastronómica 
+                        que marcará un antes y un después en su concepción de la cocina de mercado.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Footer -->
+        <div class="container-footer" data-editable="FOOTER">
+            <footer>
+                <h3>© 2020 Restaurante Hierbabuena - Todos los Derechos Reservados</h3>
+            </footer>
+        </div>
+    </body>
+
+    <style>
+		[data-editable]:hover{
+			border: 2px solid red;
+		}
+
+        /* NavBar */
+        .header-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .logo {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo h1 b {
+            color: #30B708;
+        }
+
+        /* Img */
+        .imagen {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Content */
+        .content  {
+            width: 100%;
+            padding: 40px 0;
+            background: #fff;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .content  h3 {
+            text-align: center;
+            margin-top: 40px;
+            color: #8e8e8e;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .container-footer {
+            width: 100%;
+            padding: 20px 0;
+            background: #fff;
+            margin-top: 40px;
+        }
+        .container-footer footer {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .container-footer footer hr {
+            margin-top: 20px;
+            border: none;
+            height: 2px;
+            background: #c0c0c07a;
+        }
+        .container-footer h3 {
+            text-align: center;
+            color: #8e8e8e;
+            font-weight: 50px;
+        }
+        
+        select {
+            background-color: white;
+            border:none;
+            border-radius: 4px;
+            display: inline-block;
+            font: inherit;
+                line-height: inherit;
+            line-height: 1.5em;
+            padding: 5px;
+        }
+        select.classic {
+        background-image:
+            linear-gradient(45deg, transparent 50%, #333 50%),
+            linear-gradient(135deg, #333 50%, transparent 50%),
+            linear-gradient(to right, #333, #333);
+        background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            100% 0;
+        background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+        background-repeat: no-repeat;
+        }
+        select.classic:focus {
+        background-image:
+            linear-gradient(45deg, white 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, white 50%),
+            linear-gradient(to right, gray, gray);
+        background-position:
+            calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em,
+            100% 0;
+        background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+        background-repeat: no-repeat;
+        border-color: grey;
+        outline: 0;
+        }
+        select.round {
+        background-image:
+            linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%),
+            radial-gradient(#ddd 70%, transparent 72%);
+        background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - .5em) .5em;
+        background-size:
+            5px 5px,
+            5px 5px,
+            1.5em 1.5em;
+        background-repeat: no-repeat;
+        }
+
+
+        select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+        }
+
+    </style>
+</html>
